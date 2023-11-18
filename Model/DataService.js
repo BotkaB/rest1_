@@ -1,6 +1,7 @@
 export default class DataService {
   constructor() {
     console.log("DataServise");
+    axios.defaults.baseURL="http://127.0.0.1:8000/api/"
   }
   getData(vegpont, callback) {
     axios
@@ -10,7 +11,7 @@ export default class DataService {
       /*   console.log(response);
         console.log(response.data);
         console.log(response.data.irok); */
-        callback(response.data.irok);
+        callback(response.data);
       })
       .catch(function (error) {
         // handle error

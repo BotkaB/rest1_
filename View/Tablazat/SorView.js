@@ -17,7 +17,7 @@ export default class SorView {
   }
 
   trigger(e){
-    const esemenyem=new CustomEvent(e,{detail:this.id})
+    const esemenyem=new CustomEvent(e,{detail:this.#obj.id})
     window.dispatchEvent(esemenyem)
   }
 
