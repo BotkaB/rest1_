@@ -4,9 +4,9 @@ import SorView from "./SorView.js";
 export default class TablaView{
     #list=[]
     constructor(list, szuloElem){
-        console.log(adatLeiro)
+    
         this.#list=list;
-        console.log(this.#list)
+   
         szuloElem.append(`<table class='table table-striped'>
                                 <thead></thead>
                                 <tbody></tbody>

@@ -4,7 +4,7 @@ export default class FejlecView {
     this.#obj = obj;
     
     this.szuloElem = szuloElem;
-    console.log(this.#obj);
+  
     this.htmlOsszerak();
   }
   htmlOsszerak() {
@@ -14,7 +14,7 @@ export default class FejlecView {
     }
 
     txt+="</tr>"
-    console.log(txt)
+ 
     this.szuloElem.append(txt)
   }
 }
